@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismael D. Arróniz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Cardo', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 30px;
+            font-family: 'Cardo', serif;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-family: 'Cardo', serif;
+            margin: 20px 0;
+        }
+
+        p {
+            font-family: 'Cardo', serif;
+            font-size: 20px;
+        }
+
+        .available {
+            font-family: 'Cardo', serif;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .available::before {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><circle cx="25" cy="25" r="10" fill="%2328a745"/></svg>');
+            background-size: contain;
+            animation: pulse-animation 1.5s infinite ease-in-out;
+            margin-right: 10px;
+        }
+
+        @keyframes pulse-animation {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .projects {
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ismael D. Arróniz</h1>
+        <img src="http://www.idarroniz.com/wp-content/uploads/2024/09/2024-09-17_17-00.png" alt="Ismael D. Arróniz Image">
+        <h2>De ideas a negocios</h2>
+        <p><em>Trabajo con ideas para mejorar <s>el</s> mi mundo. Creo mis propios negocios y ayudo a otros a pasar del cero al uno.</em></p>
+        <p class="available">Disponible</p>
+        <p class="projects">Aquí puedes ver algunos de mis proyectos, proyectos en los que he participado y también proyectos que he abandonado. En todo este tiempo he aprendido un montón de herramientas y habilidades para conseguir mis objetivos.</p>
+    </div>
+</body>
+</html>
