@@ -1,2 +1,2 @@
 # idarroniz
-Professional website and portfolio
+Professional website
